@@ -4,3 +4,6 @@ from django.shortcuts import render
 # Each view is a py function
 def Home(request):
     return render(request, 'index.html')
+
+def Platos(request):
+    return render(request, 'platos.html')
