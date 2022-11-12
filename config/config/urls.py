@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path
 from web.views import Home
 from web.views import Platos
+from web.views import Empleados
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Home, name="home"),
     path('platos/',Platos, name="platos"),
+    path('employees/', Empleados, name="employees"),
 ]
