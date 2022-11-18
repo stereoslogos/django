@@ -1,6 +1,5 @@
 from django import forms
 
-
 class FormularioRegistroEmpleados(forms.Form):
     STATE=(
         (1, 'Single'),

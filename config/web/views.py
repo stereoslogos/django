@@ -21,7 +21,7 @@ def Platos(request):
         datosFormulario=FormularioRegistroPlatos(request.POST)
         if datosFormulario.is_valid():
             datosLimpios=datosFormulario.cleaned_data
-            print(datosLimpios)
+            # Sending data to database
 
     return render(request, 'platos.html', diccionarioEnvioDatos)
 
