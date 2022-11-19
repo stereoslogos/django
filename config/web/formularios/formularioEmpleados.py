@@ -18,12 +18,6 @@ class FormularioRegistroEmpleados(forms.Form):
         required=True,
         label='Last'
     )
-    fotoEmployee=forms.CharField(
-        widget=forms.TextInput(attrs={"class":"form-control mb-3"}),
-        max_length=200,
-        required=True,
-        label='Picture'
-    )
     stateEmployee=forms.ChoiceField(
         widget=forms.Select(attrs={"class":"form-control mb-3"}),
         label='Marital status',
